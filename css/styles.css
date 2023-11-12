@@ -18,6 +18,9 @@ body {
   --hero_background-color: #2E2F42;
   --white_background-color: #FFFFFF;
   --modal_background-color: #FCFCFC;
+  --navy-blue-modal: rgba(46, 47, 66, 0.40);
+  --transition-duration: 250ms;
+  --transition-tf: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*Common Styles*/
