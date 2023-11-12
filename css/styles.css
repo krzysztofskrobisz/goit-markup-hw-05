@@ -119,6 +119,19 @@ img {
   display: inline-block;
 }
 
+.navigation-link--current::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  color: var(--pressed_state-color);
+  background-color: var(--pressed_state-color);
+  bottom: -1px;
+  border-radius: 2px;
+  top: 46px;
+  left: 0;
+}
+
 .address {
   font-style: normal;
 }
@@ -136,6 +149,9 @@ img {
   letter-spacing: 0.02em;
   cursor: pointer;
   text-decoration: none;
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-tf);
 }
 
 .navigation-link:hover,
