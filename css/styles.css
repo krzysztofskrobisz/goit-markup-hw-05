@@ -646,3 +646,62 @@ img {
   transition: opacity var(--transition-duration) var(--transition-tf),
   visibility var(--transition-duration) var(--transition-tf);
 }
+
+.modal-window.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 408px;
+  min-height: 584px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  background-color: var(--modal_background-color);
+  color: var(--dark-color);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20),
+              0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+              0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform var(--transition-duration) var(--transition-tf);
+}
+
+.modal-button {
+  position: absolute;
+  display: block;
+  width: 24px;
+  height: 24px;
+  top: 24px;
+  right: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
+  transition: background-color var(--transition-duration) var(--transition-tf),
+  border var(--transition-duration) var(--transition-tf);
+}
+
+.modal-button:hover,
+.modal-button:focus {
+  background-color: var(--pressed_state-color);
+  border: none;
+  fill: var(--white_background-color);
+}
+
+.modal-button-icon {
+  transition: fill var(--transition-duration) var(--transition-tf);
+}
+
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-50%) translateY(-50%) scale(0) rotate(0deg) skew(40deg, 40deg);
+}
