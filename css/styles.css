@@ -108,6 +108,7 @@ img {
   align-items: center;
   gap: 40px;
   position: relative;
+  padding: 24px 0;
 }
 
 .navigation-link {
@@ -124,7 +125,7 @@ img {
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-tf);
   position: relative;
-  padding: 24px 0;
+  /* padding: 24px 0; */
   display: inline-block;
 }
 
