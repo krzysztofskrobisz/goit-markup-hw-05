@@ -290,10 +290,14 @@ img {
   transition: transform var(--transition-duration) var(--transition-tf);
 }
 
-.projekt-photo-wrapper:hover .text-projekt-wrapper,
-.project-photo:focus .text-projekt-wrapper {
+.project-photo:hover .text-projekt-wrapper, .project-photo:focus .text-projekt-wrapper {
   transform: translateY(0%);
 }
+
+/* .projekt-photo-wrapper:hover .text-projekt-wrapper,
+.project-photo:focus .text-projekt-wrapper {
+  transform: translateY(0%);
+} */
 
 /*Studio Hero Section no.1 Styles*/
 
